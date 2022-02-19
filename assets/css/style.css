@@ -1,12 +1,13 @@
 :root {
-    --primary-color: #8ef5d3;
-    --secondary-color: #0d3d2f;
-    --tertiary-color: #324c4e;
-    --text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    --background-color:#f2efe5;
+    --largeText-color: #a58f4c;
+    --tertiary-color: #261c00;
+    --text-shadow: 1px 1px 10px rgba(25, 19, 0, 0.5);
+    --text-hover: 1px 2px 3px #261c00;
   }
 
 * {
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,10 +25,10 @@ header {
 header h1 {
   display: flex;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   font-weight: bold;
   font-size: 60px;
-  color: var(--tertiary-color);
+  color: var(--largeText-color);
   text-shadow: var(--text-shadow);
   padding: 5px 15px 5px 100px;
 }
@@ -48,21 +49,20 @@ header nav ul {
   background-color: var(--tertiary-color);
 }
 header nav ul li a {
-  color: var(--primary-color);
+  color: var(--largeText-color);
   padding: 10px 15px 10px 10px;
   font-weight: lighter;
   font-size: 20px;
   text-shadow: var(--text-shadow);
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  text-decoration: none;
   background-color: var(--tertiary-color);
 }
 
 header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: var(--text-shadow);
+  color: var(--background-color);
+  text-shadow: var(--text-hover);
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .hero {
@@ -70,6 +70,7 @@ header nav ul li a:hover {
   justify-content: flex-end;
   align-items: flex-end;
   background-image: url("./images/woods.jfif");
+  background-size: cover;
   height: 250px;
 }
 
@@ -82,33 +83,115 @@ header nav ul li a:hover {
 
 .hero h2 {
   display: flex;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--background-color);
+  color: var(--largeText-color);
   padding: 5px;
   text-shadow: var(--text-shadow);
 }
 
-
-.about {
-  margin: 50px;
-}
-
-.work {
-  margin: 50px;
-}
-
-.contact {
-  margin: 50px;
-}
-
-.resume {
-  margin: 50px;
+.primary-border {
+  border-left: 3px solid var(--largeText-color);
+  margin-top: 50px;
 }
 
 .section-title {
-  margin: 50px;
+  margin: 50px 15px 15px 50px;
+  text-align: right;
+  color: var(--largeText-color);
+  font-size: 30px;
+  text-shadow: var(--text-shadow);
 }
 
-footer {
-  margin: 50px;
+.section-title h2 {
+  order: 1;
+  flex: 1;
+  width: 130px;
+  padding-left: 100px;
 }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about p {
+  order: 2;
+  flex: 3 0 auto;
+  margin: 0 15px 15px 15px;
+  color: var(--tertiary-color);
+  line-height: 1.2;
+}
+
+/* work section */
+.work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.work-examples {
+  order: 1;
+  flex: 3 0 auto;
+  justify-content: flex-end;
+}
+
+/* projects  */
+
+.project a {
+  text-decoration: none;
+}
+
+.project1 {
+  background-image: url("./images/rbuddy.png");
+  background-size: cover;
+  width: 100%;
+  max-width: 1300px;
+  height: 400px;
+  margin: 0 15px 15px 15px;
+  border: 3px solid var(--largeText-color);
+}
+
+.project2 {
+  justify-content: flex-end;
+  background-image: url("https://via.placeholder.com/350");
+  background-size: cover;
+  width: 40%;
+  max-width: 1300px;
+  height: 400px;
+  margin: 0 15px 15px 15px;
+  border: 3px solid var(--largeText-color);
+}
+
+.project3 {
+  background-image: url("https://via.placeholder.com/350");
+  background-size: cover;
+  width: 40%;
+  max-width: 1300px;
+  height: 400px;
+  margin: 0 15px 15px 15px;
+  border: 3px solid var(--largeText-color);
+}
+
+.project-title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  color: var(--largeText-color);
+  text-shadow: var(--text-shadow);
+  width: 150px;
+  margin: 300px 75px 25px 0;
+  padding: 15px;
+  line-height: 1.5;
+  box-shadow: var(--text-shadow); 
+}
+
+
+/* .project img {
+  
+} */
+
+
+
+
