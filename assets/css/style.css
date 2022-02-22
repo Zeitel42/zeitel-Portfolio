@@ -89,108 +89,121 @@ header nav ul li a:hover {
   text-shadow: var(--text-shadow);
 }
 
-.primary-border {
-  border-left: 3px solid var(--largeText-color);
+/* .primary-border {
+  border-right: 3px solid var(--largeText-color);
   margin-top: 50px;
-}
-
+} */
 .section-title {
-  margin: 50px 15px 15px 50px;
-  text-align: right;
+  width: 20%;
+  height: auto;
   color: var(--largeText-color);
-  font-size: 30px;
+  font-size: 35px;
   text-shadow: var(--text-shadow);
-}
-
-.section-title h2 {
-  order: 1;
-  flex: 1;
-  width: 130px;
-  padding-left: 100px;
+  border-right: 3px solid var(--largeText-color);
+  text-align: right;
+  padding: 2%;
 }
 
 .about {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-flow: row wrap;
 }
 
-.about p {
-  order: 2;
-  flex: 3 0 auto;
-  margin: 0 15px 15px 15px;
+.about-text {
+  width: 70%;
   color: var(--tertiary-color);
   line-height: 1.2;
+  padding: 2%;
 }
 
 /* work section */
 .work {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-.work-examples {
-  order: 1;
-  flex: 3 0 auto;
-  justify-content: flex-end;
 }
 
 /* projects  */
 
-.project a {
+/* .project a {
   text-decoration: none;
+} */
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
-.project1 {
-  background-image: url("./images/rbuddy.png");
-  background-size: cover;
+.image {
+  padding: 15px;
+}
+
+.project-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
   width: 100%;
-  max-width: 1300px;
-  height: 400px;
-  margin: 0 15px 15px 15px;
-  border: 3px solid var(--largeText-color);
+  box-shadow: var(--text-shadow);
+  border: 2px solid var(--largeText-color);
+  margin: 2%;
 }
 
-.project2 {
-  justify-content: flex-end;
-  background-image: url("https://via.placeholder.com/350");
-  background-size: cover;
-  width: 40%;
-  max-width: 1300px;
-  height: 400px;
-  margin: 0 15px 15px 15px;
-  border: 3px solid var(--largeText-color);
+.project-1 img{
+  width: 100%;
+  height: auto;
 }
 
-.project3 {
-  background-image: url("https://via.placeholder.com/350");
-  background-size: cover;
+.project-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  box-shadow: var(--text-shadow);
+  border: 2px solid var(--largeText-color);
+  margin: 2%;
+}
+
+.p2a {
   width: 40%;
-  max-width: 1300px;
-  height: 400px;
-  margin: 0 15px 15px 15px;
-  border: 3px solid var(--largeText-color);
+}
+
+.project-2 img{
+  width: 100%;
+  height: auto;
+}
+
+.project-3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  box-shadow: var(--text-shadow);
+  border: 2px solid var(--largeText-color);
+  margin: 2%;
+}
+
+.p3a {
+  width: 40%;
+}
+
+.project-3 img{
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  position: absolute;
   background-color: var(--background-color);
   color: var(--largeText-color);
   text-shadow: var(--text-shadow);
-  width: 150px;
-  margin: 300px 75px 25px 0;
-  padding: 15px;
-  line-height: 1.5;
   box-shadow: var(--text-shadow); 
+  margin-bottom: 2%;
 }
 
 
-/* .project img {
+
   
-} */
+
 
 
 
