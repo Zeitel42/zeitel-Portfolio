@@ -1,7 +1,7 @@
 # Portfolio for Zac Eitel
 
 ## Purpose
-A website that offers a glimpse.
+A website with a biography section, a section that showcases previous projects, and a section with contact info.
 
 ## Built With
 * HTML
