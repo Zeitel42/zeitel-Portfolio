@@ -71,18 +71,32 @@ header nav ul li a:hover {
 
 .hero {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   background-image: url("./images/woods.jfif");
   background-size: cover;
   height: 250px;
 }
 
+.hero-avatar {
+  /* position: absolute;
+  left: 10%;
+  top: 20%;   */
+  width: 200px;
+  height: 200px;
+  box-shadow: var(--text-shadow);
+  margin: 2%;
+}
+
+.hero-avatar img {
+  width: 100%;
+}
+
 .hero-sub {
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 0 75px 25px 0;
+  margin: 2%;
 }
 
 .hero h2 {
@@ -310,7 +324,20 @@ footer div h3 {
 
   .hero {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+
+  .hero-avatar {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero-avatar img {
+    width: 100%;
+    height: 100%;
   }
 
   .hero-sub {
@@ -360,6 +387,7 @@ footer div h3 {
       }
   
 }
+
 /* responsive design for small screens */
 
 @media screen and (max-width: 480px) {
@@ -369,9 +397,26 @@ footer div h3 {
     justify-content: center;
     flex-flow: column wrap;
   }
+
   header h1 {
     padding: 15px;
     text-align: center;
+  }
+
+  .hero {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-avatar {
+    width: 100px; 
+    height: auto;
+    justify-content: center;
+  }
+
+  .hero-sub {
+    font-size: 15px;
   }
 
   .project-title {
@@ -390,6 +435,13 @@ footer div h3 {
     justify-content: center;
     align-items: center;
   }
+
+  .contact a {
+    display: flex;
+    align-items: center;
+  }
+
+
 }
   
 
