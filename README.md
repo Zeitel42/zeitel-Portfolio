@@ -10,5 +10,7 @@ A website with a biography section, a section that showcases previous projects, 
 ## Website
 https://zeitel42.github.io/zeitel-Portfolio/
 
+<img src="./assets/css/images/screenshot.png">
+
 ## Contribution
 Contributions made by [Zac Eitel]
