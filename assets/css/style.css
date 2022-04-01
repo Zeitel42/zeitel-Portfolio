@@ -157,7 +157,7 @@ header nav ul li a:hover {
   padding: 15px;
 }
 
-.project-1 {
+.project-primary{
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -167,12 +167,12 @@ header nav ul li a:hover {
   margin: 2%;
 }
 
-.project-1 img{
+.project-primary img{
   width: 100%;
   height: auto;
 }
 
-.project-2 {
+.project-secondary {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -182,12 +182,12 @@ header nav ul li a:hover {
   margin: 0.5%;
 }
 
-.project-2 img{
+.project-secondary img{
   width: 100%;
   height: auto;
 }
 
-.project-3 {
+/* .project-3 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -200,7 +200,7 @@ header nav ul li a:hover {
 .project-3 img{
   width: 100%;
   height: auto;
-}
+} */
 
 .project-title {
   position: absolute;
